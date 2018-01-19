@@ -1,8 +1,8 @@
 (function(ext) {    
 	
 	var espera_comando = 100;
-	//var ip_ponte = "http://localhost:1330/";
-	var ip_ponte = "http://192.168.0.10:3000/";
+	var ip_ponte = "http://localhost:1330/";
+	//var ip_ponte = "http://192.168.0.10:3000/";
 	// Cleanup function when the extension is unloaded
     ext._shutdown = function() {};
 
