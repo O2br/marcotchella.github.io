@@ -9,7 +9,9 @@
     };
 
     ext.get_temp = function(location, callback) {
+        callback(10);
         // Make an AJAX call to the Open Weather Maps API
+        /*
         $.ajax({
               url: 'http://api.openweathermap.org/data/2.5/weather?q='+location+'&units=imperial',
               dataType: 'jsonp',
@@ -19,6 +21,7 @@
                   callback(temperature);
               }
         });
+        */
     };
 
     // Block and block menu descriptions
