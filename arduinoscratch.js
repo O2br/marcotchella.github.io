@@ -16,7 +16,7 @@
 	ext.sensor = function(callback) {        
 	  try {	
         $.ajax({
-              url: "http://localhost:8080/sd1",    // http://localhost:3000/eco/alo         
+              url: "http://localhost:1330/sd1",    // http://localhost:3000/eco/alo         
               success: function( dado_sensor ) {
                   // Got the data - parse it and return the temperature
                   resposta = dado_sensor;
