@@ -1,7 +1,7 @@
 (function(ext) {    
 	
 	var espera_comando = 100;
-	var ip_ponte = "http://localhost:1330/";
+	var ip_ponte = "http://192.168.1.32:8081/";
 	//var ip_ponte = "http://192.168.0.10:3000/";
 	// Cleanup function when the extension is unloaded
     ext._shutdown = function() {};
@@ -21,7 +21,7 @@
 	ext.saida_digital = function(valorsaida, callback) {        
 	  try {	
         $.ajax({
-              url: ip_ponte  + "sd_13:" + valorsaida,    // http://localhost:3000/eco/alo         
+              url: ip_ponte  + "/led/sd_13:" + valorsaida,    // http://localhost:3000/eco/alo         
               success: function( dado_sensor ) {
                   // Got the data - parse it and return the temperature
                   resposta = dado_sensor;
