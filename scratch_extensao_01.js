@@ -21,7 +21,7 @@
 	ext.saida_digital = function(valorsaida, callback) {        
 	  try {	
         $.ajax({
-              url: ip_ponte  + "/led/sd_13:" + valorsaida,    // http://localhost:3000/eco/alo         
+              url: ip_ponte  + "/led,    // http://localhost:3000/eco/alo         	     
               success: function( dado_sensor ) {
                   // Got the data - parse it and return the temperature
                   resposta = dado_sensor;
