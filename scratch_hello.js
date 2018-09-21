@@ -15,10 +15,14 @@
         //The Hello world function
         ext.helloWorld = function(){
         	alert('Hello World!')
-         $.get("http://192.168.1.32/led", function(data, status){
-                alert("Foiii");
-         });         
          
+         try {
+           $.get("http://192.168.1.32/led", function(data, status){
+                alert("Foiii");
+           });             
+         } catch (e) {
+           Console.log(e);
+         }
         };
         
         ScratchExtensions.register('Hello World', descriptor, ext);
