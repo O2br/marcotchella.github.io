@@ -17,7 +17,7 @@
         	alert('Hello World!')
          
          try {
-           $.get("http://192.168.1.32/led", function(data, status){
+           $.get("/led", function(data, status){
                 alert("Foiii");
            });             
          } catch (e) {
