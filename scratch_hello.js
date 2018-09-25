@@ -17,7 +17,7 @@
         	alert('Hello World!')
          
          try {
-           $.get("http://127.0.0.1:8080/verde", function(data, status){
+           $.get("http://127.0.0.1:8080/verde1", function(data, status){
                 console.log(data);
                 console.log(status);
                 alert("Foiii");
