@@ -18,6 +18,8 @@
          
          try {
            $.get("http://10.100.24.185:8080/verde", function(data, status){
+                console.log(data);
+                console.log(status);
                 alert("Foiii");
            });             
          } catch (e) {
