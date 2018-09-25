@@ -17,7 +17,7 @@
         	alert('Hello World!')
          
          try {
-           $.get("/led", function(data, status){
+           $.get("/verde", function(data, status){
                 alert("Foiii");
            });             
          } catch (e) {
