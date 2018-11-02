@@ -21,6 +21,7 @@
                 console.log(data);
                 console.log(status);
                 alert("Foiii");
+            
            });             
          } catch (e) {
            Console.log(e);
