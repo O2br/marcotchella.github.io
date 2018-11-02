@@ -26,6 +26,16 @@
            Console.log(e);
          }
         };
-        
+         try {
+           $.get("http://192.168.2.121:8080/verde2", function(data, status){
+                console.log(data);
+                console.log(status);
+                alert("Foiii");
+           });             
+         } catch (e) {
+           Console.log(e);
+         }
+        };
+  
         ScratchExtensions.register('Hello World', descriptor, ext);
     })({});
