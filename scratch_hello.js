@@ -20,7 +20,7 @@
            $.get("http://127.0.0.1:8080/verde2", function(data, status){
                 console.log(data);
                 console.log(status);
-                alert("Foiii");
+                alert("Foiii-127.0.0.1");
             
            });             
          } catch (e) {
@@ -30,21 +30,31 @@
            $.get("http://192.168.2.121:8080/verde2", function(data, status){
                 console.log(data);
                 console.log(status);
-                alert("Foiii");
+                alert("Foiii-192.168.2.121");
            });             
          } catch (e) {
            Console.log(e);
          }
-
          try {
-           $.get("http://192.168.23:8080/verde2", function(data, status){
+           $.get("http://34.227.158.250:8080/verde2", function(data, status){
                 console.log(data);
                 console.log(status);
-                alert("Foiii");
+                alert("Foiii-34.227.158.250");
+           });             
+         } catch (e) {
+           Console.log(e);
+         }                  
+         
+         try {
+           $.get("http://192.168.2.23:8080/verde2", function(data, status){
+                console.log(data);
+                console.log(status);
+                alert("Foiii-192.168.2.23");
            });             
          } catch (e) {
            Console.log(e);
          }         
+         
         };
         
         ScratchExtensions.register('Hello World', descriptor, ext);
