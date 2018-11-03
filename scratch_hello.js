@@ -22,7 +22,8 @@
                 alert("Foiii-127.0.0.1");            
            });             
          } catch (e) {
-           Console.log(e);
+           console.log(e);
+           alert(e.message);
          }
          try {
            $.get("http://192.168.2.121:8080/verde2", function(data, status){
@@ -31,7 +32,8 @@
                 alert("Foiii-192.168.2.121");
            });             
          } catch (e) {
-           Console.log(e);
+           console.log(e);
+           alert(e.message);
          }
          try {
            $.get("http://34.227.158.250:8080/verde2", function(data, status){
@@ -40,7 +42,8 @@
                 alert("Foiii-34.227.158.250");
            });             
          } catch (e) {
-           Console.log(e);
+           console.log(e);
+           alert(e.message);
          }                           
          try {
            $.get("http://192.168.2.23:8080/verde2", function(data, status){
@@ -49,7 +52,8 @@
                 alert("Foiii-192.168.2.23");
            });             
          } catch (e) {
-           Console.log(e);
+           console.log(e);
+           alert(e.message);
          }                  
         alert('Hello World!-Fim')         
          
