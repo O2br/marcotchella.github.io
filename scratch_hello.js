@@ -14,7 +14,7 @@
         
         //The Hello world function
         ext.helloWorld = function(){
-        	alert('Hello World!');         
+        	alert('Hello World!')
          try {
            $.get("http://127.0.0.1:8080/verde2", function(data, status){
                 console.log(data);
@@ -50,10 +50,10 @@
            });             
          } catch (e) {
            Console.log(e);
-         }         
-         alert('Hello World!-Fim.');
+         }                  
+        alert('Hello World!-Fim.')         
          
         };
-        
+
         ScratchExtensions.register('Hello World', descriptor, ext);
     })({});
