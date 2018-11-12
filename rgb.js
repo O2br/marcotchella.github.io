@@ -7,7 +7,7 @@
     ext.set_rgb = function(r,g,b) {        
         //alert("RGB: "+r+":"+g+":"+b);
         $.ajax({
-              url: 'http://052f29fb.ngrok.io/api/colordata/?r='+r+'&g='+g+'&b='+b,
+              url: 'http://192.168.43.23:8080/api/colordata/?r='+r+'&g='+g+'&b='+b,
               dataType: 'get',
               success: function( weather_data ) {
                   // Got the data - parse it and return the temperature
