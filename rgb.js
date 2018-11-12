@@ -5,7 +5,7 @@
         return {status: 2, msg: 'Ready'};
     };
     ext.set_rgb = function(r,g,b) {        
-        alert("RGB: "+r+":"+g+":"+b);
+        //alert("RGB: "+r+":"+g+":"+b);
         $.ajax({
               url: 'http://052f29fb.ngrok.io/api/colordata/?r='+r+'&g='+g+'&b='+b,
               dataType: 'get',
