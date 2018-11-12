@@ -4,7 +4,9 @@
     ext._getStatus = function() {
         return {status: 2, msg: 'Ready'};
     };
-    ext.set_rgb = function(r,g,b) {
+    ext.set_rgb = function(r,g,b) {        
+        alert(r+g+b);
+        /*
         $.ajax({
               url: 'http://052f29fb.ngrok.io/api/colordata/?r='+r+'&g='+g+'&b='+b,
               dataType: 'get',
@@ -16,6 +18,8 @@
                   //window.setTimeout(function() {callback(temperature);}, espera_comando); //executa e espera o tempo do parametro 
               }
         });  
+        */
+        
     };        
     // Block and block menu descriptions
     var descriptor = {
@@ -24,5 +28,5 @@
         ]
     };
     // Register the extension
-    ScratchExtensions.register('Weather extension', descriptor, ext);
+    ScratchExtensions.register('RGB extension', descriptor, ext);
 })({});
