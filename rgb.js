@@ -1,6 +1,5 @@
-(function(ext) {
-    // Cleanup function when the extension is unloaded
-	var espera_comando = 100;
+(function(ext) {    
+    var espera_comando = 100;
     ext._shutdown = function() {};
     // Status reporting code
     // Use this to report missing hardware, plugin or unsupported browser
