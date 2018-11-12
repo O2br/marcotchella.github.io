@@ -18,8 +18,7 @@
                   //window.setTimeout(function() {callback(temperature);}, espera_comando); //executa e espera o tempo do parametro 
               }
         });  
-        */
-        
+        */        
     };        
     // Block and block menu descriptions
     var descriptor = {
