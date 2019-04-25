@@ -23,9 +23,9 @@
         menus : [
             motorPort:["M1","M2"],
         ] ,
-        blocks: [
+        blocks: {
             [' ', 'Led RGB - R %s G %s B %s  -> %d.motorPort ', 'set_rgb', '0', '0', '0'],
-        ],
+        },
     };
     // Register the extension
     ScratchExtensions.register('RGB extension', descriptor, ext);
