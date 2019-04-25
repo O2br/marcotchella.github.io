@@ -30,3 +30,4 @@
     // Register the extension
     ScratchExtensions.register('RGB extension', descriptor, ext);
 })({});
+
