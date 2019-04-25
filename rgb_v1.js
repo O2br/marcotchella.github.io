@@ -5,27 +5,27 @@
         return {status: 2, msg: 'Ready'};
     };
     ext.set_rgb = function(status,r,g,b) {
-        //alert("RGB: "+r+":"+g+":"+b);
         alert(status);
-        $.ajax({
-              url: 'http://192.168.43.23:8080/api/colordata/?r='+r+'&g='+g+'&b='+b,
-              dataType: 'get',
-              success: function( weather_data ) {
-                  // Got the data - parse it and return the temperature
-                  temperature = weather_data;
-                  console.log(weather_data);
-                  //callback(temperature);
-                  //window.setTimeout(function() {callback(temperature);}, espera_comando); //executa e espera o tempo do parametro
-              }
-        });
     };
+    
+    ext.set_boca = function(status,r,g,b) {
+        alert(status);
+    };
+    ext.set_olho = function(,r,g,b) {
+        alert(status);
+    };    
     // Block and block menu descriptions
     var descriptor = {
         menus : {
             motorPort:["M1","M2"],
+            posicao:["direito","esquerdo"],
+            situacao:["ligado","desligado"],
+            
         } ,
         blocks: [
-            [' ', 'Led RGB %m.motorPort - R %s G %s B %s ', 'set_rgb','', '0', '0', '0'],
+            [' ', 'Led RGB %m.motorPort - R %s G %s B %s ', 'set_rgb',' ', '0', '0', '0'],            
+            [' ', 'Olho %m.posicao mudar para situacao de: %m.situacao ', 'set_olho',' ', ' '],
+            [' ', 'Boca mostrar : %s ', 'set_boca',' '],
         ],
     };
     // Register the extension
