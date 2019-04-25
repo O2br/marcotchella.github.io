@@ -24,10 +24,9 @@
             [' ', 'Led RGB %m.buttonStatus - R %s G %s B %s', 'set_rgb', '0', '0', '0'],
         ],
         menus : [ 
-            buttonStatus:["pressionado","liberado"],
+            buttonStatus:['pressionado','liberado'],
         ],
     };
     // Register the extension
     ScratchExtensions.register('RGB extension', descriptor, ext);
 })({});
-
