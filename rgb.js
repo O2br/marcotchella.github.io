@@ -4,7 +4,7 @@
     ext._getStatus = function() {
         return {status: 2, msg: 'Ready'};
     };
-    ext.set_rgb = function(status,r,g,b) {        
+    ext.set_rgb = function(r,g,b) {        
         //alert("RGB: "+r+":"+g+":"+b);
         $.ajax({
               url: 'http://192.168.43.23:8080/api/colordata/?r='+r+'&g='+g+'&b='+b,
@@ -21,11 +21,8 @@
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
-            [' ', 'Led RGB %m.buttonStatus - R %s G %s B %s', 'set_rgb', '0', '0', '0'],
-        ],
-        menus : [ 
-            buttonStatus:['pressionado','liberado'],
-        ],
+            [' ', 'Led RGB - R %s G %s B %s', 'set_rgb', '0', '0', '0'],
+        ],        
     };
     // Register the extension
     ScratchExtensions.register('RGB extension', descriptor, ext);
