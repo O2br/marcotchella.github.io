@@ -25,7 +25,7 @@
         } ,
         blocks: [
             [' ', 'Led RGB %m.motorPort - R %s G %s B %s ', 'set_rgb',' ', '0', '0', '0'],            
-            [' ', 'Olho %m.posicao mudar para situacao de: %m.situacao ', 'set_olho',' ', ' '],
+            [' ', 'Olho %m.posicao mudar para: %m.situacao ', 'set_olho',' ', ' '],
             [' ', 'Boca mostrar : %s ', 'set_boca',' '],
         ],
     };
