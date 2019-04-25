@@ -6,6 +6,7 @@
     };
     ext.set_rgb = function(status,r,g,b) {
         //alert("RGB: "+r+":"+g+":"+b);
+        alert(status);
         $.ajax({
               url: 'http://192.168.43.23:8080/api/colordata/?r='+r+'&g='+g+'&b='+b,
               dataType: 'get',
