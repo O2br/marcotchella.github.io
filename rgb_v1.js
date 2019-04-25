@@ -20,12 +20,12 @@
     };
     // Block and block menu descriptions
     var descriptor = {
-        menus : [
+        menus : {
             motorPort:["M1","M2"],
-        ] ,
-        blocks: {
+        } ,
+        blocks: [
             [' ', 'Led RGB %m.motorPort - R %s G %s B %s ', 'set_rgb','', '0', '0', '0'],
-        },
+        ],
     };
     // Register the extension
     ScratchExtensions.register('RGB extension', descriptor, ext);
