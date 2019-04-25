@@ -21,8 +21,11 @@
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
-            [' ', 'Led RGB - R %s G %s B %s', 'set_rgb', '0', '0', '0'],
-        ]
+            [' ', 'Led RGB %m.buttonStatus - R %s G %s B %s', 'set_rgb', '0', '0', '0'],
+        ],
+        menus : [ 
+            buttonStatus:["pressionado","liberado"],
+        ],
     };
     // Register the extension
     ScratchExtensions.register('RGB extension', descriptor, ext);
