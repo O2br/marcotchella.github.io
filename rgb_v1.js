@@ -8,11 +8,12 @@
         alert(status);
     };
     
-    ext.set_boca = function(status,r,g,b) {
-        alert(status);
+    ext.set_boca = function(msg) {
+        console.log(msg);
     };
-    ext.set_olho = function(,r,g,b) {
-        alert(status);
+    ext.set_olho = function(posicao,situacao) {
+        console.log(posicao);
+        console.log(situacao);
     };    
     // Block and block menu descriptions
     var descriptor = {
