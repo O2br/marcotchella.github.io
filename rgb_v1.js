@@ -9,11 +9,19 @@
     };
     
     ext.set_boca = function(msg) {
-        console.log(msg);
+              console.log(msg);
+              $.ajax({
+                url: 'http://192.168.2.22:8080/boca?msg='+msg,
+                dataType: 'get',
+                success: function( data ) {
+                  console.log(data);
+                }
+              }); 
+        
     };
     ext.set_olho = function(posicao,situacao) {
         console.log(posicao);
-        console.log(situacao);
+        console.log(situacao);                
     };    
     // Block and block menu descriptions
     var descriptor = {
