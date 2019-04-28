@@ -1,5 +1,14 @@
 (function(ext) {
     var espera_comando = 100;
+    var chapeuPosicao = {
+		direito:'d',
+		esquerdo:'e'
+   }
+    var chapeuSituacao = {
+		ligado:'1',
+		desligado:'2'
+   }    
+    
     ext._shutdown = function() {};
     ext._getStatus = function() {
         return {status: 2, msg: 'Ready'};
@@ -20,8 +29,17 @@
         
     };
     ext.set_olho = function(posicao,situacao) {
-        console.log(posicao);
-        console.log(situacao);                
+        var p,s;
+        if(typeof posicao=="string"){
+			p = chapeuPosicao[posicao];
+        }
+        if(typeof situacao=="string"){
+			s = chapeuSituacao[situacao];
+        }
+        console.log(posicao+":"+p);
+        console.log(situacao+":"+s);                
+        
+        
     };    
     // Block and block menu descriptions
     var descriptor = {
