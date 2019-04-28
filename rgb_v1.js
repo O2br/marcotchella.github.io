@@ -29,13 +29,16 @@
         
     };
     ext.set_olho = function(posicao,situacao) {
-        var p,s;
-        if(typeof posicao=="string"){
-			p = chapeuPosicao[posicao];
-        }
-        if(typeof situacao=="string"){
-			s = chapeuSituacao[situacao];
-        }
+        if(typeof posicao=="string" && typeof situacao=="string"){
+              $.ajax({
+                url: 'http://192.168.2.22:8080/olhp?posicao='+chapeuPosicao[posicao]+'&estado='+ chapeuSituacao[situacao] ,
+                dataType: 'get',
+                success: function( data ) {
+                  console.log(data);
+                }
+              }); 		
+	}
+	    
         console.log(posicao+":"+p);
         console.log(situacao+":"+s);                
         
