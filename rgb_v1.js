@@ -3,11 +3,11 @@
     var chapeuPosicao = {
 		direito:'d',
 		esquerdo:'e'
-   }
+   };
     var chapeuSituacao = {
 		ligado:'1',
 		desligado:'2'
-   }    
+   } ;   
     
     ext._shutdown = function() {};
     ext._getStatus = function() {
